@@ -1,0 +1,23 @@
+local whitelist = {
+    ["Anthonyz_ohhhhh8"] = true,
+    ["Player2"] = true,
+    ["Player3"] = true,
+    -- Add more players as needed
+}
+
+local function isInWhitelist(playerName)
+    return whitelist[playerName] or false
+end
+
+local function kickPlayer(player)
+game.Players.LocalPlayer:Kick("Fuck You Niga Ass Bitch Sucking GlxckDev Dicks Your Not Fucking Whitelist Your Nigga Dick Mother fucker welcome to Chicago my nigga")
+    print("Kicking " .. player .. " from the game...")
+end
+
+local playerNameToCheck = "Player4"
+if isInWhitelist(playerNameToCheck) then
+    print(playerNameToCheck .. " is in the whitelist.")
+else
+    print(playerNameToCheck .. " is not in the whitelist. Kicking...")
+    kickPlayer(playerNameToCheck)
+end.
